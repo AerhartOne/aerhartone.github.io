@@ -1,0 +1,351 @@
+html {
+}
+
+body {
+  font-family: 'Raleway','Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+  background-color: white;
+  color: darkslategray;
+  font-size: 1.5vw;
+  line-height: 2em;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+/* Main Semantic and Default Components */
+
+/* Area Rules */
+
+nav {
+  background-color: #404040;
+  text-align: center;
+  line-height: 2em;
+  font-size: 1.3em;
+  color: white;
+  border: 1px solid transparent;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+}
+
+nav a {
+  color: rgb(220, 120, 120);
+  font-weight: bold;
+}
+
+nav ul {
+  display: block;
+  padding: 0;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  width: 20%;
+}
+
+article {
+  width: 100%;
+  margin: 0 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-self: stretch;
+  border: 1px solid transparent;
+}
+
+header {
+  margin: 1.1em auto;
+}
+
+section {
+  align-content: center;
+  align-items: center;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Individual Element and Text Rules */
+
+a {
+  color: lightsalmon;
+  text-decoration-line: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration-line: underline;
+}
+
+p {
+  box-sizing: border-box;
+  text-align: inherit;
+  margin: 0.8em auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+h2 {
+  text-align: inherit;
+  font-size: 2.2em;
+}
+
+h3 {
+  text-align: inherit;
+  text-decoration: underline;
+  font-size: 1.8em;
+}
+
+ul {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+li  {
+  text-align: left;
+  font-size: 1.1em;
+}
+
+img {
+  margin: 0 auto ;
+  min-width: 15%;
+}
+
+table {
+  color: white;
+  font-size: 1.1em;
+  background-color: transparent;
+  display: block;
+}
+
+th {
+  font-size: 1.3em;
+  font-weight: bolder;
+  background-color: lightcoral;
+  padding: 10px;
+}
+
+tr {
+  border: 1px solid white;
+}
+
+td {
+  padding: 10px;
+  background-color: salmon;
+  border: 1px transparent;
+  border-color: grey;
+}
+
+/* Classes */
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+.flex-container-vertical {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.flex-vertical-feature-image {
+  width: 10vw;
+}
+
+.fineprint {
+  font-size: 0.2em;
+}
+
+.featured-object { 
+  margin: 2% auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 2px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2em auto;
+  min-width: 60%;
+  max-width: 75%;
+}
+
+.grid-item {
+  margin: 5% 5%;
+  padding: 0 0%;
+}
+
+.grid-item p {
+  line-height: 1.1em;
+}
+
+.navlist li {
+  display: inline;
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.spaced-section {
+  padding: 4% 0;
+}
+
+.rounded-button {
+  display: block;
+  background: #30ce30;
+  color: white;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5em 1.5em;
+  border: 1px solid transparent;
+  border-radius: 2em;
+  font-weight: bold;
+}
+
+.rounded-image {
+  display: block;
+  border: 1px solid transparent;
+  border-radius: 20%;
+}
+
+/* ID Rules */
+
+/* Specific Section Rules */
+
+#navbar {
+  display: flex;
+  justify-content: center;
+}
+
+#intro {
+  color: white;
+  background-color: #4060aa;
+  background: radial-gradient(circle, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0)), url("https://blog.oxforddictionaries.com/wp-content/uploads/mountain-names.jpg");
+  background-size: cover;
+  padding: 6% 0;
+}
+
+#video {
+  color: white;
+  background: radial-gradient(circle, #fc5555 60%, #ca4040);
+  display: flex;
+  justify-content: center;
+}
+
+#about-cakes {
+  color: white;
+  background: linear-gradient(0.3turn,#cf3560 25%, #ff5560);
+}
+
+#about-cakes-header {
+  width: 100%;
+  height: 100%;
+  margin: 0 0;
+  padding: 4% 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.7), rgba(255,255,255,0.3)), url("http://4.bp.blogspot.com/-FokFJsHTykI/Uhv3aqVOizI/AAAAAAAACMQ/M62zcqNeiwI/s1600/_DSC3429.jpg");
+  background-size: cover;
+  background-position: 0 -42%;
+  color: darkslategray;
+}
+
+#cakes-quick-notes {
+  background: radial-gradient(circle, rgba(30,10,0,0.5), rgba(0,0,0,0)), url("http://1.bp.blogspot.com/-CIHi9ucZX7E/T9PHQfNnHeI/AAAAAAAAFqo/1Xx-I3iZt84/s1600/cake-9.jpg");
+  background-size: cover;
+  background-position: 40%, 90%;
+  padding: 5% 0;
+}
+
+#site-footer {
+  padding: 3%;
+  background-color: white;
+  background: radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,0.25) );
+}
+
+/* Specific Element Rules */
+
+#profile-picture {
+  display: block;
+  border: 1px solid transparent;
+  border-radius: 100%;
+  margin: 2% auto;
+  width: 20vw;
+}
+
+#cake-image {
+  align-self: center;
+  width: 40%;
+}
+
+#featured-video {
+  width: 40vw;
+  height: calc(40vw * (0.75) );
+  margin: 1.2em auto;
+}
+
+#video-feature-text {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+#back-to-top {
+  background-color: #505050;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
+
+/* Media Query Overrides */
+@media(max-width: 600px) {
+  body {
+    font-size: 2vw;
+  }
+
+  nav {
+    font-size: 1.6em;
+  }
+
+  p {
+    font-size: 1.5em;
+    margin: 1em 5%;
+  }
+
+  table {
+    margin: 1.1em 5%;
+  }
+
+  .grid-container {
+    grid-template-columns: 0;
+    grid-template-rows: repeat(3, 1fr); 
+  }
+
+  .flex-container-horizontal {
+    flex-wrap: wrap;
+  }
+ 
+  .flex-vertical-feature-image {
+    width: 30vw;
+  }
+  
+  #featured-video {
+    width: 60vw;
+    height: calc(60vw * (0.75) );
+  }
+}

@@ -1,0 +1,210 @@
+<!-- Skeleton HTML -->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width" />
+		<!-- Links to js and css files go here -->
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+		<title>My Homepage</title>
+	</head>
+
+	<body>
+		
+		<!-- Navigation Bar, utilises in-page references -->
+			<nav class="navbar">
+				<ul class="navlist">
+					<li><a href="#intro">Introduction</a></li>
+					|
+					<li><a href="#video">A YouTube channel!</a></li>
+					|
+					<li><a href="#about-cakes">Cake facts</a></li>
+				</ul>
+			</nav>
+
+			<!-- Introduction -->
+			<article id="intro" class="flex-container-vertical">
+				<header>
+					<h1>This is my silly website. </h1>
+				</header>
+				
+				<h2>Please enjoy.</h2>
+
+				<p>
+					This was supposed to be a profile page.  But I must have missed something.
+				</p>
+				<h2>
+					Oh well.
+				</h2>
+
+				<p>
+					Instead of that, all I have to offer is a silly website in which I talk about nothing in particular.
+				</p>
+				<h2>
+					Oh, and cake.
+				</h2>
+
+				<p>
+					The picture below isn't me, but you can pretend it is.
+				</p>
+				
+				<img src="./images/profile.jpeg" id="profile-picture" />
+
+				<p>
+					<a href="./secondindex.html" class="rounded-button"> Link to an almost identical, but separate, html file </a>
+				</p>
+				
+			</article>
+
+			<article id="video">
+				<header>
+					<h2>Hey, vsauce.</h2> 
+				</header>
+
+				<p>
+					Yes, it's a random plug of one of my favourite YouTube channels.
+				</p>
+
+				<p>
+					<a href="https://www.youtube.com/user/Vsauce" class="rounded-button" target="_blank"  rel="noopener noreferrer">Visit the Channel</a>
+				</p>
+
+				<div id="featured-video">
+					<iframe class="featured-object centered" width=100% height=100% src="https://www.youtube.com/embed/ffUnNaQTfZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+
+				<!-- Only implementation of Bootstrap column spacing -->
+				<div id="video-feature-text" class="flex-container-horizontal">
+					<div class="grid-item col-sm-3">
+						 <h3>Learn stuff!</h3> 
+						 <img class="flex-vertical-feature-image" src="./images/svg/baseline-find_in_page-24px.svg"/>
+						<p>
+							Feel like you'd like to know more impractical but really cool stuff? 
+						</p>
+						<p>
+							So do I. 
+						</p>
+						<p>
+							You won't use what you learn watching vsauce on a regular basis, but you'll stay interested for sure. 
+						</p>
+					</div>
+					<div class="grid-item col-sm-3">
+						 <h3>Kill time!</h3>
+						 <img class="flex-vertical-feature-image" src="./images/svg/baseline-access_time-24px.svg"/>
+						 <p>
+							Sometimes, we just have nothing to do. 
+						</p>
+						<p>
+							And during times like those, we all need a good amount of random guff to fill the time. 
+						</p>
+						<p>
+							It might as well be interesting. 
+						</p>
+					</div>
+					<div class="grid-item col-sm-3"> 
+						<h3>Use bandwidth!</h3> 
+						<img class="flex-vertical-feature-image" src="./images/svg/baseline-import_export-24px.svg"/>
+						<p>
+							What's that? Your internet's too fast? Just gotta download some more stuff, but you can't seem to figure you what to jam your connection up with?
+						</p>
+						<p>
+							YouTube videos have your answer.
+						</p>
+					</div>
+				</div>
+
+			</article>
+
+
+			<!-- Section describing cakes in superfluous detail -->
+			<article id="about-cakes">
+				<header id="about-cakes-header">
+					<h2>Cake Facts</h2>
+				</header>
+
+				<section class="spaced-section flex-container-vertical">
+					<h3> Picture of a cake </h3>
+					<p>
+						I was given a picture of a cake to work with, so I guess I'm talking about cakes.
+					</p>
+					<p>
+						<em>Here's a picture of a cake. It's sized using relative size and everything.</em> 
+					</p>
+					<p>
+						<strong>It even links to the Wikipedia page.</strong> 
+					</p>
+					<p>
+						<span class="fineprint">okay, no, it doesn't</span>
+					</p>
+	
+					<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+						<img src="https://crustabakes.files.wordpress.com/2013/06/rainbow-cake-4.jpg" id="cake-image" class="rounded-image" />
+					</a>
+				</section>
+
+				<section class="spaced-section flex-container-vertical" id="cakes-quick-notes">
+					<h3> Quick notes </h3>
+					<p>
+						If you're not a fan of Wikipedia, here's some cake facts to get you started:
+						<ul>
+							<li> There's a lot of types of cake. </li>
+							<li> Cakes are usually baked in an oven of some kind. </li>
+							<li> They're a good source of sugar, if nothing else. </li>
+							<li> Some people manage to make cakes without baking, apparently. </li>
+						</ul>
+					</p>
+				</section>
+
+				<section class="spaced-section flex-container-vertical">
+					<h3>Cake-related deduction</h3>
+					<p>
+						You can make some deductions about a cake based on whether it's baked or not, and whether it was in an oven at some point.
+					</p>
+					
+					<!-- Table of cake states - need to find more compact layout for table markup! -->
+					<table>
+						<tr>
+							<th> </th>
+							<th> Oven </th>
+							<th> Not-Oven </th>
+						</tr>
+						<tr>
+							<th> Baked </th>
+							<td> Most cakes fall under this category </td>
+							<td> Likely cooked in a car in the afternoon sun </td>
+						</tr>
+						<tr>
+							<th> Not-Baked </th>
+							<td> Did you remember to turn the oven on </td>
+							<td> Well, some people like eating cake dough </td>
+						</tr>
+					</table>
+				</section>
+
+			</article>
+
+			<footer id="site-footer">
+				<p>
+					So, that's the end of the site.
+					<br />
+					Told you it was silly.
+				</p>
+
+				<p>
+					&#169 2019 Amelia Chung
+				</p>
+			</footer>
+
+			<a href="#" id="back-to-top" class="rounded-button">Back to Top</a>
+
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+		</body>
+</html>
+

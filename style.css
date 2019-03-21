@@ -1,0 +1,111 @@
+html {
+}
+
+body {
+  font-family: 'Raleway','Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+  background-color: white;
+  color: darkslategray;
+  font-size: 0.9vw;
+  line-height: 2em;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+/* Individual Element and Text Rules */
+
+a {
+  color: lightsalmon;
+  text-decoration-line: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration-line: underline;
+}
+
+p {
+  font-size: 1em;
+  box-sizing: border-box;
+  text-align: inherit;
+  margin: 1em auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1em;
+}
+
+h2 {
+  text-align: inherit;
+  font-size: 2.2em;
+}
+
+h3 {
+  text-align: inherit;
+  text-decoration: underline;
+  font-size: 1.5em;
+}
+
+img {
+  margin: 0 auto ;
+  min-width: 15%;
+}
+
+.rounded-button {
+  display: block;
+  background: #30ce30;
+  color: white;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5em 1.5em;
+  border: 1px solid transparent;
+  border-radius: 2em;
+  font-weight: bold;
+}
+
+.rounded-button:hover {
+  background: #108010;
+}
+
+.rounded-image {
+  display: block;
+  border: 1px solid transparent;
+  border-radius: 20%;
+  height: 100%;
+  width: auto;
+}
+
+.row-section {
+  background: #ccffee;
+  height: 30vh;
+}
+
+@media(max-width: 800px) {
+  body {
+    font-size: 1.5vw;
+  }
+
+  .row-section {
+    height: 50vh; 
+  }
+
+  .rounded-image {
+    width: auto;
+    max-height: 25vh;
+  }
+
+}
+
+
+@media(max-width: 600px) {
+  body {
+    font-size: 5vw;
+  }
+
+  .row-section {
+    height: auto; 
+  }
+}

@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+	<link rel="stylesheet" href="./styles.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Tumblr-Tag-Guess</title>
+</head>
+<body>
+	<div class="container-fluid" >
+		<div id="guessing-form" class="row" >
+			<div class="col d-flex justify-content-center align-items-center flex-column">
+				<h1 class="display-1 text-center">Tumblr-Tag Guess</h1>
+				<h2 class="lead text-center">Here's a bunch of images from Tumblr. Guess what the common tag is.</h2>
+				<div id="response-container" class="container d-flex justify-content-center flex-wrap w-100">
+					
+				</div>
+		</div>
+	</div>
+	<div id="content-container" class="container">
+		<div id="main-content" class="mx-auto d-flex flex-wrap justify-content-center align-items-center align-content-center">
+		</div>
+	</div>
+	
+	
+	<div id="answer-prompt-bg" class="d-flex justify-content-center align-items-center">
+		<div id="answer-prompt" class="d-flex flex-column justify-content-center align-items-center">
+			<p id="answer-text" class="display-2 text-center">asdf</p>
+			<p>
+				<button id="continue-button"  type="button" class="btn btn-lg btn-primary">Continue</button>
+			</p>
+		</div>
+	</div>
+
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src="apihandler.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
